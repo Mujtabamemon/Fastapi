@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 app = FastAPI()
+
 @app.get("/")
-def home():
-    return {"message":"abu"}
+def read_root():
+    return {"message": "Hello World"}
